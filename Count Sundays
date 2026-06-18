@@ -1,0 +1,22 @@
+start_day = input().lower()
+n = int(input())
+
+days = {
+    "sun": 0,
+    "mon": 1,
+    "tue": 2,
+    "wed": 3,
+    "thu": 4,
+    "fri": 5,
+    "sat": 6
+}
+
+start = days[start_day]
+
+count = 0
+
+for i in range(n):
+    if (start + i) % 7 == 0:
+        count += 1
+
+print(count)
