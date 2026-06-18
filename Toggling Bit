@@ -1,0 +1,12 @@
+n = int(input())
+
+
+bits = len(bin(n)) - 2
+
+
+mask = (1 << bits) - 1
+
+
+result = n ^ mask
+
+print(result)
