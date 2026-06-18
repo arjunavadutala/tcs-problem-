@@ -1,0 +1,13 @@
+n = int(input())
+r = int(input())
+
+if r == 0:
+    print(0)
+else:
+    s = sum(int(d) for d in str(n))
+    num = s * r
+
+    while num >= 10:
+        num = sum(int(d) for d in str(num))
+
+    print(num)
