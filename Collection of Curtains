@@ -1,0 +1,13 @@
+s = input()
+l = int(input())
+
+max_count = 0
+
+for i in range(0, len(s), l):
+    group = s[i:i+l]
+    count = group.count('a')
+
+    if count > max_count:
+        max_count = count
+
+print(max_count)
